@@ -19,6 +19,7 @@ This reflects real-world systems used by e-commerce platforms to personalize sho
 The project uses the public **Instacart** dataset from Kaggle, consisting of over 3 million grocery orders.
 
 Main files include:
+NOTE: NOT ALL DATASET ARE INCLUDED IN THE GIT REPO DUE TO LARGE FILE SIZE FORMAT OF DATASET
 - `orders.csv` – customer orders  
 - `order_products__prior.csv` – items from previous orders  
 - `order_products__train.csv` – items used as target labels  
@@ -44,14 +45,13 @@ Insights from EDA help shape useful features for modeling.
 
 ### User-Level Features
 - Number of orders  
-- Average basket size  
-- Days since prior order  
-- Most active shopping times  
+- Calculate cumulative days from first order 
+- Days since prior order   
 
 ### Product-Level Features
 - Total purchases  
-- Reorder probability  
-- Product popularity score  
+- Days since last purchase of that product
+- Last time the product was purchased (days from first order)
 
 ### User–Product Interaction Features
 - Total times user bought the product  

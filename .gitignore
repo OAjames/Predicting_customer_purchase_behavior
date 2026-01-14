@@ -1,18 +1,19 @@
-# ===== Data files =====
+# Data files
 *.csv
 *.parquet
 *.pkl
 *.joblib
-*.zip
 data/
 
-# ===== Notebooks =====
+# Notebooks
 .ipynb_checkpoints/
 
-# ===== Python =====
+# Python
 __pycache__/
 *.pyc
 
-# ===== OS =====
+# OS/IDE
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/

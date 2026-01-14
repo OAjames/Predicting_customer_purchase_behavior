@@ -1,7 +1,18 @@
-data/
-models/
-artifacts/
-__pycache__/
-.ipynb_checkpoints/
+# ===== Data files =====
+*.csv
+*.parquet
 *.pkl
-.env
+*.joblib
+*.zip
+data/
+
+# ===== Notebooks =====
+.ipynb_checkpoints/
+
+# ===== Python =====
+__pycache__/
+*.pyc
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
